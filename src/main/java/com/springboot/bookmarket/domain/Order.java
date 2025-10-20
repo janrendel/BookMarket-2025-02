@@ -21,7 +21,7 @@ public class Order {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "shipping_id")
-    private Customer Shipping;
+    private Shipping Shipping;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "order_order_id")

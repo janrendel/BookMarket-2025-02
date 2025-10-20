@@ -38,7 +38,8 @@ public class SecurityConfig {
             .authorizeHttpRequests(
                   authorize -> authorize
                   .requestMatchers("/books/add").hasRole("ADMIN")
-                  .anyRequest().permitAll()
+                          .requestMatchers("/order/list").hasRole("ADMIN")
+                          .anyRequest().permitAll()
             )
 //            .formLogin(Customizer.withDefaults());
                 .formLogin(formLogin -> formLogin

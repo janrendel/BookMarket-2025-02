@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Customer {
+public class Customer extends Shipping {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -12,7 +12,7 @@ public class Shipping {
     private int id;
     private String name;
     @DateTimeFormat(pattern = "yyyy/MM/dd")
-    private Address date;
+    private String date;
     @OneToOne
     @JoinColumn(name = "address_id")
     private Address address;

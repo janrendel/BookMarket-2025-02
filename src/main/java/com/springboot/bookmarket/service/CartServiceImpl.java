@@ -30,4 +30,9 @@ public class CartServiceImpl implements CartService{
         cartRepository.delete(cartId);
     }
 
+    @Override
+    public Cart validateCart(String cartId) {
+        return null;
+    }
+
 }
